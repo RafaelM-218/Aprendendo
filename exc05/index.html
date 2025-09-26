@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público no GitHub</a></p>
+    <!--Para que a pagina html abra um link na mesma aba, é utilizado o atributo target com o valor _self. Rel, é a relação do documento atual com o documento de destino do link. 
+    Para que o link seja direcionado para outra aba, é utilizado o valor _blank em target. Note, que o rel utilizado para garantir que o google entenda que o link irá para uma nova aba é o external. -->
+
+    <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">canal gratuito no YouTube</a></p>
+
+    <h1>Usando links internos</h1>
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next" target="_self">segunda página</a></p>
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícias</a></p>
+    <!--Já para os links internos, como mencionado antes, utiliza-se o valor _self para o atributo target. Note também que os valores utilizados no atributo rel é o next, de próximo, mas, também pode ser utilizado o prev de previous para relacionar o link atual com o link anterior, voltando assim para a página de antes.-->
+
+    <!-- Quando ambos documentos html estão dentro da mesma página, é necessário somente colocar a referência do documento dentro do href, criando assim, uma relação de um documento para o outro. Mas e quando o documento está dentro de outra pasta e não tem o mesmo caminho que os documentos da pasta atual?? Va para o documento html da página 03, dentro da pasta noticias, que lá estará a explicação.-->
+
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="livro/meulivro.zip" download="meulivro.zip" type="application/zip">Livro compactado em ZIP</a></li>
+    </ul>
+</body>
+</html>
