@@ -1,34 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-
-    <title>Prática</title>
+    <title>Figura 19</title>
 </head>
 <body>
-    <header><!--Header significa cabeçalho. Que é o lugar da página que ficam os links de navegação da página
-    Como ínicio, sobre, fórum e etc.-->
-        <nav>
-            <a class="logo" href="/">XP LIFE HACK</a>
-            <div class="mobile-menu">
-            <div class="lineup1"></div>
-            <div class="lineup2"></div>
-            <div class="lineup3"></div>
-            </div>
+    <form action="pagina.php" method="post" target="_blank" accept-charset="UTF-8859" enctype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
+    <p><button type="submit">Enviar</button></p>
 
-            <ul class="nav-list">
-                <li><a href="/">Início</a></li>
-                <li><a href="/">Barra de XP</a></li>
-                <li><a href="/">Sobre</a></li>
-                <li><a href="/">Fórum</a></li>
-            </ul>
-        </nav>
-    </header>
+    <p><label>Procurar <input type="search" name="pesquisa"></label></p>
+    <p><button type="submit">Enviar</button></p>
 
-    <main></main>
+    <p><label>Horário do Evento <input type="" name="horario"></label></p>
+    <p><button type="submit">Enviar</button></p>
 
-    <script src="script.js"></script>
-</body>
+    Lista de Itens
+    <select name="lista">
+        <option value="Item 1" selected>Item 1</option>
+        <option value="Item 2" >Item 2</option>
+        <option value="Item 3" >Item 3</option>
+        <option value="Item 4" >Item 4</option>
+    </select>
+    <p><button type="submit">Enviar</button></p>
+
+    <p>Caixa de Texto <textarea name="mensagem" rows="10" cols="30">Digite seu texto aqui!</textarea></p>
+
+    <p>Escolha o seu navegador preferido: <input list="navegador">
+        <datalist>
+            <option value="Microsoft Edge"></option>
+            <option value="Firefox"></option>
+            <option value="Opera"></option>
+            <option value="Safari"></option>
+        </datalist>
+    </p>
+
+    <p>Sexo: <input type="radio" name="sexo" value="masculino" checked> Masculino
+    <input type="radio" name="sexo" value="feminino">Feminino</p>
+
+    <p><input type="checkbox" name="casado" value="Casado">Casado <br />
+    <input type="checkbox" name="filhos" value="Filhos">Tenho filhos: <input type="number" name="filhos" min="0" max="99" step="1" value="0"></p>
+    Data de Nascimento:
+    <input type="date" name="nascimento" max="2015-01-01"><br>
+
+    Cor Favorita: <input type="color" name="cor"><br />
+
+    <fieldset>
+        <legend>Informação</legend>
+        <p><label>Email <input type="email" name="email" placeholder="usuário@domínio.com"></label></p>
+        <p><label>Site <input type="url" name="site" placeholder="http://www.site.com"></label></p>
+        <p><label>Telefone <input type="tel" name="fone" placeholder="99999-9999"></label></p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Login</legend>
+        <p><label>Usuário <input type="text" name="usuario" required></label></p>
+        <p><label>Senha <input type="password" name="senha" required></label></p>
+    </fieldset>
+    <p><button type="submit" onclick="alert('Dados Enviados')">>Enviar</button></p>
+
+        </form>
+    </body>
 </html>
